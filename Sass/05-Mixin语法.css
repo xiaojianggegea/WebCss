@@ -1,0 +1,13 @@
+.text {
+  width: 600px;
+  color: #008000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #0000FF; }
+
+.title {
+  width: 1000px;
+  color: #008000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: #0000FF; }

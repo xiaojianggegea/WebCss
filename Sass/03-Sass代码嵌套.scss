@@ -1,0 +1,11 @@
+@import '03-sass变量';
+div {
+	color: #008000;
+	span{
+		color: #00FFFF;
+		a{
+			color: $text-color;
+		}
+	}
+}
+

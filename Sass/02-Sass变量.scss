@@ -1,0 +1,11 @@
+$text-color:#444;
+$small-font: 12px+2px;
+.text {
+	// color: $text-color;
+	color: lighten($text-color,30%);
+	font-size: $small-font;
+}
+.title {
+	// color: $text-color;
+	color: darken($text-color,30%);
+}

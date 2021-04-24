@@ -1,0 +1,13 @@
+// @mixin same-text-code {
+// 	color: #008000;
+// 	overflow: hidden;
+// 	text-overflow: ellipsis;
+// }
+// 在外引入
+@import  '05-mixins';
+.text {
+	@include same-text-code(600px);
+}
+.title {
+	@include same-text-code(1000px);
+}

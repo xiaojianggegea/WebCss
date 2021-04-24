@@ -1,0 +1,7 @@
+@mixin same-text-code ($width){
+	width: $width;
+ 	color: #008000;
+	overflow: hidden;
+ 	text-overflow: ellipsis;
+	background-color: #0000FF;
+ }
