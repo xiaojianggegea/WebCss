@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>溢出文字省略号显示</title>
+		<style type="text/css">
+			/* 单行文本 */
+			.box1 {
+				width: 150px;
+				height: 80px;
+				background-color: #00FF00;
+				margin: 0 auto;
+				/* １、默认自动换行 */
+				/* white-space: normal; */
+				/* 强制一行显示 */
+				white-space: nowrap;
+				/* 2、超出部分隐藏 */
+				overflow: hidden;
+				/* 3、文字用省略号代替 */
+				text-overflow: ellipsis;
+			}
+			/* 多行文本 */
+			.box2 {
+				width: 150px;
+				height: 65px;
+				background-color: #00FF00;
+				margin: 0 auto;
+				/* 1、默认自动换行 */
+				overflow: hidden;
+				/* 2、文字用省略号代替 */
+				text-overflow: ellipsis;
+				/* 3、弹性伸缩盒子模型显示 */
+				display: -webkit-box;
+				/* 4、限制在一个块元素显示的文本的行数 */
+				-webkit-line-clamp: 3;
+				/* 5、设置或检索伸缩盒子的子元素的排列方式 */
+				-webkit-box-orient: vertical;
+			}
+		</style>
+	</head>
+	<body>
+	    <!-- 单行文本 -->
+		<div class="box1">撒也不说了好不好，此处省略一万字</div>
+		<hr >
+		<!-- 多行文本 -->
+		<div class="box2">撒也不说了好不好，此处省略一万字撒也不说了好不好，此处省略一万字</div>
+	</body>
+</html>

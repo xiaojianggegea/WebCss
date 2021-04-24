@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>双伪元素法</title>
+	</head>
+	<style type="text/css">
+		/* 添加这些代码 */
+		.clearfix:before,
+		.clearfix:after {
+			content: "";
+			display: table;
+		}
+
+		.clearfix:after {
+			clear: both;
+		}
+
+		.clearfix {
+			/* IE6 7 专有 */
+			*zoom: 1;
+		}
+
+		.box {
+			width: 400px;
+			margin: 0 auto;
+			background-color: #ffff00;
+		}
+
+		.box1 {
+			float: left;
+			width: 200px;
+			height: 200px;
+			background-color: #aaaaff;
+		}
+
+		.box2 {
+			float: left;
+			width: 100px;
+			height: 100px;
+			background-color: #aaaaff;
+		}
+
+		.box3 {
+			height: 300px;
+			background-color: #00ff00;
+		}
+	</style>
+	<body>
+		<div class="box clearfix">
+			<div class="box1">大毛</div>
+			<div class="box2">二毛</div>
+		</div>
+		<div class="box3">三毛</div>
+	</body>
+</html>

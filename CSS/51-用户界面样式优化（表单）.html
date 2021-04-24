@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>用户界面样式</title>
+		<style type="text/css">
+			/* 鼠标样式 表单轮廓和防止拖拽文本区域 */
+			input {
+				outline: none;
+			}
+			textarea {
+				resize: none;
+				outline: none;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li style="cursor: default;">默认小白鼠标的样式</li>
+			<li style="cursor: pointer;">鼠标小手样式</li>
+			<li style="cursor: move;">鼠标移动样式</li>
+			<li style="cursor: text;">鼠标文本样式</li>
+			<li style="cursor: not-allowed;">鼠标禁止样式</li>
+		</ul>
+		<hr >
+		<!-- 1、取消表单轮廓 -->
+		<input type="text">
+		<!-- 2、防止拖拽文本区域 -->
+		<textarea name="" id="" cols="30" rows="10"></textarea>
+	</body>
+</html>

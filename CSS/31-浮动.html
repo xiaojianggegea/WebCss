@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动</title>
+		<style type="text/css">
+			.left,
+			.right {
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+			}
+
+			.left {
+				float: left;
+			}
+
+			.right {
+				margin-right: 50px;
+				float: right;
+			}
+
+			/* 浮动特性
+			     1、脱标：脱离标准普通流的控制移动到指定位置。浮动的盒子不能保留到原先的位置。
+				 2、如果多个盒子都设置了浮动，那么他们会按照属性值一行内显示并且在顶端对齐排列
+				 3、浮动元素具有行内块元素特点（行内元素设置浮动需要转为行内块或块元素设置width和height）
+				 
+			 */
+			.box1 {
+				float: left;
+				width: 200px;
+				height: 200px;
+				background-color: rgb(0, 153, 255);
+			}
+
+			.box2 {
+				width: 400px;
+				height: 400px;
+				background-color: #aaff7f;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="left">左青龙</div>
+		<div class="right">右白虎</div>
+		<hr>
+		<div class="box1">浮动的盒子</div>
+		<div class="box2">标准盒子</div>
+		</div>
+	</body>
+</html>

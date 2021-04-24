@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>外边距</title>
+		<style type="text/css">
+			/* 1、盒子外边距 */
+			.one,
+			.two {
+				width: 200px;
+				height: 200px;
+				background-color: #008000;
+			}
+
+			.one {
+				margin-top: 20px;
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
+
+			.two {
+				/* 复合写法 */
+				margin: 5px;
+				/* 上下左右都是5px */
+				/* margin: 5px 10px; 上下5px,左右10px */
+				/* margin: 5px 10px 20px; 上为5px,左右10px,下20px */
+				/* margin: 5px 10px 20px 30px; 上 右 下 左 */
+			}
+
+			/* 外边距应用使块级元素水平居中  盒子左右外边距必须都设置为auto */
+			.oneA {
+				width: 200px;
+				height: 200px;
+				background-color: #5555FF;
+				margin: 0 auto;
+			}
+
+			.twoB {
+				width: 100px;
+				height: 100px;
+				background-color: #00FFFF;
+				margin: 10px auto;
+			}
+
+			/* 外边距合并问题 */
+			.onea {
+				width: 100px;
+				height: 100px;
+				background-color: #008000;
+				margin-bottom: 100px;
+			}
+
+			.twob {
+				width: 100px;
+				height: 100px;
+				background-color: #008000;
+				margin-top: 200px;
+			}
+
+			/* 其实中间距离为200px */
+
+			/* 嵌套块元素外边距塌陷问题
+			        解决办法
+						1、为父元素设置上边框
+						2、为父元素设置内边距
+						3、为父元素添加
+		    */
+			.box1 {
+				width: 400px;
+				height: 400px;
+				background-color: #3D3D3D;
+				margin-top: 100px;
+				/* border: 2px  #550000; */
+				padding: 1px;
+			}
+
+			.box2 {
+				width: 200px;
+				height: 200px;
+				background-color: #00FFFF;
+				margin-top: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="one">1</div>
+		<div class="two">2</div>
+		<hr>
+		<div class="oneA"></div>
+		<div class="twoB"></div>
+		<hr>
+		<div class="onea">大毛</div>
+		<div class="twob">二毛</div>
+		<hr>
+		<div class="box1">
+			<div class="box2"></div>
+		</div>
+	</body>
+</html>

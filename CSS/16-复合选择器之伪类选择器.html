@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>复合选择器之伪类选择器</title>
+	</head>
+	<style type="text/css">
+		/* 1、未被访问的链接 a:link 把没有点击过的链接选出来 */
+		a:link {
+			color: #5555ff;
+			text-decoration: none;
+		}
+
+		/* 2、a:visited 选择访问过的链接 */
+		a:visited {
+			color: #ff5500;
+		}
+
+		/* 3、a:hover 选择鼠标经过的链接 */
+		a:hover {
+			color: #ADFF2F;
+		}
+
+		/* 4、鼠标正在按下的链接 没有弹起的链接 */
+		a:active {
+			color: #00ffff;
+		}
+
+		/* 顺序按上面顺序写 input:focus 把获得光标的表单元素选取出来*/
+
+		/* focus选择器  */
+		input:focus {
+			background-color: #00FFFF;
+			color: #0000ff;
+		}
+	</style>
+	<body>
+		<a href="#">小猪佩奇</a>
+		<hr>
+		<input type="text">
+		<input type="text">
+		<input type="text">
+	</body>
+</html>

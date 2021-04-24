@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS背景颜色</title>
+		<style type="text/css">
+			/* 1、设置背景颜色 */
+			.YanSe {
+				width: 100px;
+				height: 100px;
+				background-color: #ADFF2F;
+			}
+
+			/* 2、设置背景图片
+			            背景平铺
+			            background-repeat: repeat;      平铺     （默认）
+			            background-repeat: no-repeat;   不平铺
+			            background-repeat: repeat-x;    沿着x平铺
+			            background-repeat: repeat-y;    沿着y平铺
+						  */
+			.BeiJing {
+				width: 640px;
+				height: 130px;
+				background-repeat: no-repeat;
+				/* 也可以设置背景颜色 */
+				background-color: #cccccc;
+				background-image: url(imgs/02.png);
+				/* 5、背景半透明 */
+				/* background: rgba(0,0,0,0.5); */
+			}
+
+			/* 3、设置背景图片的位置
+			         background-position: x y;（方位名词和精确单位，可以混合使用）
+			 */
+			.WeiZhi {
+				background-position: center;
+			}
+
+			/* 
+			 4、背景固定
+			        background-attachment: fixed;     （固定）
+					background-attachment: scroll;   （默认滚动）
+			 */
+			body {
+
+				/* 复合属性 */
+				background: url(imgs/07.jpg) no-repeat fixed;
+				background-size: cover;
+			}
+
+			p {
+				color: #00FFFF;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="YanSe"></div>
+		<hr size="3">
+		<div class="BeiJing WeiZhi"></div>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+		<p>天王盖地虎，小江一米八</p>
+	</body>
+</html>

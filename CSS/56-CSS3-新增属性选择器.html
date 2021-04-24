@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>新增属性选择器</title>
+		<style type="text/css">
+			input[value] {
+				color: #00FF00;
+			}
+
+			input[type=text] {
+				color: #008000;
+			}
+
+			div[class^=icon] {
+				color: red;
+			}
+
+			section[class$=data] {
+				color: #00FF00;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- 1、利用属性选择器就可以不用借助类或id选择器 -->
+		<input type="password" value="输入用户名">
+		<input type="password">
+		<hr>
+		<!-- 2、属性选择器还可以选择属性=值得某些元素 -->
+		<input type="text" value="输入用户名">
+		<input type="password">
+		<hr>
+		<!-- 3、属性选择器可以选择属性值开头的某些元素 -->
+		<div class="icon1">小图标1</div>
+		<div class="icon2">小图标2</div>
+		<div class="icon3">小图标3</div>
+		<div class="icon4">小图标4</div>
+		<div>我是打酱油的</div>
+		<hr>
+		<!-- 4、属性选择器可以选择属性值结尾的某些元素 -->
+		<section class="icon1-data">安琪拉</section>
+		<section class="icon2-data">哥斯拉</section>
+		<section class="icon3-ico">我是谁？</section>
+	</body>
+</html>

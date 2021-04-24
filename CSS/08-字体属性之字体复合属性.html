@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>字体复合属性</title>
+	</head>
+	<style type="text/css">
+		/* 将文字设置为倾斜 加粗 16px 微软雅黑 */
+		div {
+			/* font-style: italic;
+			font-weight: 900;
+			font-size: 16px;
+			font-family: 微软雅黑; */
+
+			/* 复合属性 */
+			/* font: font-style font-weight font-size font-family; */
+			/* 必须保留font-size和font-family属性; */
+			font: italic 900 16px 微软雅黑;
+		}
+	</style>
+	<body>
+		<div>三生三世十里桃花，一心一意百行代码。</div>
+	</body>
+</html>

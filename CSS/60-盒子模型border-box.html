@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>盒子模型border-box</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			div {
+				width: 200px;
+				height: 200px;
+				background-color: #0086B3;
+				border: 10px solid red;
+				padding: 10px;
+				/* 默认大小 */
+				/* box-sizing: content-box; */
+			}
+
+			p {
+				width: 200px;
+				height: 200px;
+				background-color: #0086B3;
+				border: 10px solid red;
+				padding: 10px;
+				/* 盒子不会撑大 */
+				box-sizing: border-box;
+		</style>
+		}
+
+	</head>
+	<body>
+		<div></div>
+		<p></p>
+	</body>
+</html>

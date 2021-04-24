@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.banner-box {
+				width: 1920px;
+				height: 650px;
+				overflow: hidden;
+			}
+
+			.banner-banner  {
+				width: 5760px;
+				list-style: none;
+				animation: switch 6s linear infinite;
+			}
+			.banner-banner>img {
+				float: left;
+				width: 1920px;
+				height: 650px;
+			}
+			.banner-banner:hover {
+				animation-play-state: paused;
+			}
+			@keyframes switch {
+				0%, 25% {
+					margin-left: 0px;
+				}
+				 35%, 60%{
+					margin-left: -1920px;
+				}
+				70%, 100%{
+					margin-left: -3840px;
+				}
+			}
+			.dot1,.dot2,.dot3 {
+				position: absolute;
+				top: 590px;
+				width: 10px;
+				height: 10px;
+				border-radius: 5px;
+			}
+			.dot1 {
+				left: 939px;
+				background: #0058AA;
+			}
+			.dot2 {
+				left: 955px;
+				background: #FFFFFF;
+			}
+			.dot3 {
+				left: 971px;
+				background: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<section class="banner-box">
+			<a href="#">
+				<div class="banner-banner">
+					<img src="imgs/banner01.png">
+					<img src="imgs/banner02.png">
+					<img src="imgs/banner03.png">
+				</div>
+			</a>	
+		</section>
+	</body>
+</html>

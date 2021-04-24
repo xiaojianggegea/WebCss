@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS元素显示模式的转换</title>
+		<style type="text/css">
+			a {
+				width: 100px;
+				height: 100px;
+				background-color: #ADFF2F;
+				/* 把行内元素转换为块级元素 */
+				display: block;
+			}
+
+			div {
+				width: 100px;
+				height: 100px;
+				background-color: #ADFF2F;
+				/* 把块级元素转换为行内元素 */
+				display: inline;
+			}
+
+			span {
+				width: 100px;
+				height: 100px;
+				background-color: #ADFF2F;
+				/* 把行内元素转换为行内块元素 */
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#">这是一个链接</a>
+		<a href="#">这是一个链接</a>
+		<hr>
+		<div>我是一个块级元素</div>
+		<div>我是一个块级元素</div>
+		<hr>
+		<span>我是行内元素</span>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>图片出现空白缝隙解决办法</title>
+		<style type="text/css">
+			img {
+				border: 2px solid red;
+				/* vertical-align: middle;  (除去基线对齐) */ 
+				display: block;
+			}
+			/* 解决办法
+			 1、用vertical-align属性
+			 2、转化为块级元素 display: block;
+			 */
+		</style>
+	</head>
+	<body>
+		<img src="imgs/bofang.png" >
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>进度条</title>
+		<style type="text/css">
+			.bar {
+				width: 500px;
+				height: 30px;
+				border: 2px solid red;
+				border-radius: 16px;
+				padding: 1px;
+			}
+
+			.bar-in {
+				width: 50%;
+				height: 100%;
+				background-color: red;
+				border-radius: 16px;
+				transition: all .7s;
+			}
+
+			.bar:hover .bar-in {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bar">
+			<div class="bar-in"></div>
+		</div>
+	</body>
+</html>

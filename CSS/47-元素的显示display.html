@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>元素的显示与隐藏</title>
+		<style type="text/css">
+			/* display  visibility 显示隐藏  overflow 溢出显示隐藏
+			  1、display: none;  隐藏对象  block; 出了转换为块级元素，还有显示元素的意思
+			  2、visibility: visible 元素可视 hidden 元素隐藏
+			  3、overflow   visible  显示溢出元素（默认的）  hidden 隐藏溢出元素  scroll 溢出部分显示滚动条 auto在需要的时候添加滚动条
+			 */
+			.peppa {
+				/* display: none; */
+				/* 隐藏元素后不占有原来的位置 */
+				visibility: hidden;
+				/* 隐藏元素后占有原来的位置 */
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+			}
+
+			.george {
+				width: 200px;
+				height: 200px;
+				background-color: skyblue;
+			}
+			.box{
+			 overflow: scroll; /*溢出部分显示滚动条*/
+				overflow: auto;/* 需要的时候添加滚动条 */
+				width: 200px;
+				height: 200px;
+				margin: 0 auto;
+				border: solid slateblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="peppa">佩奇</div>
+		<div class="george">乔治</div>
+		<hr>
+		<div class="box">
+			《小猪佩奇》，又译作《粉红猪小妹》（台湾译为粉红猪），原名为《Peppa Pig》，是由英国人阿斯特利（Astley）、贝克（Baker）、戴维
+			斯（Davis）创作、导演和制作的一部英国学前电视动画片，也是历年来最具潜力的学前儿童品牌。故事围绕小猪佩奇与家人的愉快经历，幽默 			   而有趣，藉此宣扬传统家庭观念与友情，鼓励小朋友们体验生活。
+			由英国E1 Kids于2004年5月31日发行首播后，其动画片已于全球180个地区播放，现已播出7季，中国中央电视台少儿频道也在热播之中。
+		</div>
+	</body>
+</html>

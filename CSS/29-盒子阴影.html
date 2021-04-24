@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>盒子阴影</title>
+		<style type="text/css">
+			.box1 {
+				width: 200px;
+				height: 200px;
+				background-color: #55FF00;
+				margin: 100px auto;
+				/* box-shadow: 水平阴影 垂直阴影 模糊距离 阴影尺寸 阴影颜色 将外部阴影改为内部阴影; */
+				box-shadow: 10px 10px 10px 10px #4C4C4C;
+				/* inset 内阴影 */
+			}
+			.box2 {
+				width: 200px;
+				height: 200px;
+				background-color: #55FF00;
+				margin: 100px auto;
+			}
+			/* 鼠标经过显示阴影 */
+			.box2:hover {
+				box-shadow: 10px 10px 10px 10px #4C4C4C;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<hr >
+		<div class="box2"></div>
+	</body>
+</html>

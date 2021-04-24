@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>文本颜色</title>
+		<style type="text/css">
+			/* 1、文本颜色
+			         预定义    red green blue
+					 十六进制  #ff0000
+					 RGB      rgb（255,0,0）或rgb（100%，0%，0%） */
+			.red {
+				/* color: #0000FF;  常用 */
+				/* color: greenyellow; */
+				color: rgb(250, 0, 0);
+			}
+
+			/*2、文本对齐
+			         text-align:
+					      right    居右
+						  center   居中
+						  left     居左 */
+			h1 {
+
+				text-align: center;
+			}
+
+			/* 3、装饰文本
+			          下划线   text-decoration: underline;
+					  删除线   text-decoration: line-through;
+					  上划线   text-decoration: overline;
+			  */
+
+			.text {
+				/* text-decoration: underline; */
+				/* text-decoration: line-through; */
+				/* text-decoration: overline; */
+
+			}
+
+			a {
+				/* 去除默认下划线 */
+				text-decoration: none;
+			}
+
+			/* 4、文本缩进
+			          首行缩进   text-indent: 2em;  
+			  */
+			p {
+				text-indent: 20px;
+			}
+
+			/*5、行间距
+			          上下行距离
+			  */
+			.HangJianJu {
+				line-height: 20px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="red">是你家附近年历史的快捷方式</div>
+		<h1>居中对齐文本</h1>
+		<div class="text">
+			下划线
+		</div>
+		<a href="#">去除默认下划线</a>
+		<hr>
+		<p class="HangJianJu">【环球时报-环球网报道】印度媒体一个多小时前报道，中印军队3天前在两国边境锡金段发生冲突，
+			双方均有受伤，有报道甚至称“至少20名中方士兵受伤”，但目前局势得到控制。印媒正滚动发布各种对印方有利的信息。
+			据老胡初步了解，印媒报道基本是假的。</p>
+		<p class="HangJianJu">解放军前线的巡逻日志没有相关记录。而且最近几天双方军队高层的关注焦点是第九轮军长级会谈，
+			并非发生了新的边境冲突。双方肯定没有发生印媒所说的那种规模的冲突，两国前沿部队时有小摩擦，但如果有出现伤亡的摩擦，
+			不可能在中方的巡逻日志上都没有反映。</p>
+		<p class="HangJianJu">因此可以断定，印媒所说的情况是编造的，而且他们编得很出圈。印媒称印军受伤4人，中方受伤至少20人，他们做梦呢吧？
+			印媒经常没有底线，编造新闻细节。对印媒要小心。</p>
+		<hr>
+		<div class="HangJianJu">
+			中国人
+		</div>
+	</body>
+</html>

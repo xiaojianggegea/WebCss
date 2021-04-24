@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>复合选择器之并集选择器</title>
+	</head>
+	<style type="text/css">
+		div,
+		p {
+			color: #00FFFF;
+		}
+
+		.Xiong,
+		.Xiong2,
+		.pig li {
+			color: #0000FF;
+		}
+
+		.Xiong,
+		.Xiong2,
+		ul li {
+			color: #ff0000;
+		}
+	</style>
+	<body>
+		<div>熊大</div>
+		<p>熊二</p>
+		<span>光头强</span>
+		<ul class="pig">
+			<li>小猪佩奇</li>
+			<li>佩奇爸爸</li>
+			<li>佩奇妈妈</li>
+		</ul>
+
+		<div class="Xiong">熊大</div>
+		<p class="Xiong2">熊二</p>
+		<span>光头强</span>
+		<ul>
+			<li>小猪佩奇</li>
+			<li>佩奇爸爸</li>
+			<li>佩奇妈妈</li>
+		</ul>
+	</body>
+</html>

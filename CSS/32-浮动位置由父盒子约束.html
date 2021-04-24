@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>浮动位置</title>
+		<style type="text/css">
+			/* 浮动位置由父盒子约束 */
+			.box{
+				width: 400px;
+				height: 400px;
+				background-color: #00FFFF;
+				margin: 100px auto;
+			}
+			.box1 {
+				margin-top: 150px;
+				margin-left: 150px;
+				float: left;
+				width: 100px;
+				height: 100px;
+				background-color: #550000;
+			}
+			.box2 {
+				float: right;
+				width: 100px;
+				height: 100px;
+				background-color: #550000;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="box1"></div>
+			<div class="box2"></div>
+		</div>
+	</body>
+</html>

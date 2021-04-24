@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>绝对定位</title>
+		<style type="text/css">
+			/* posititon: absolute;
+			 相对于祖先元素移动位置
+			     特点：
+				 1、若没有祖先元素或祖先元素没有定位则以浏览器为标准。
+				 2、若给父亲加定位，则以最近一级有任何定位祖先元素为参考移动。（子绝父相）
+				 3、绝对定位脱标不占原来位置。
+			 */
+			   /* 若没有祖先元素或祖先元素没有定位则以浏览器为标准。 */
+			.box {
+				width: 400px;
+				height: 400px;
+				background-color: #0000FF;
+			}
+
+			.boxf {
+				position: absolute;
+				top: 100px;
+				left: 100px;
+				width: 200px;
+				height: 200px;
+				background-color: #55ff00;
+			}
+
+			/* 若给父亲加定位，则以最近一级有任何定位祖先元素为参考移动。 */
+		    .father {
+				position: relative;
+				width: 500px;
+				height: 500px;
+				background-color: #ffff00;
+			}
+
+			.box1 {
+				width: 100px;
+				height: 100px;
+				background-color: #55007f;
+			}
+
+			.box1f {
+				position: absolute;
+				top: 200px;
+				width: 50px;
+				height: 50px;
+				background-color: #00aaff;
+			}
+
+			/* 绝对定位脱标不占原来位置 */
+			.box2 {
+				position: relative;
+				left: 100px;
+				width: 300px;
+				height: 300px;
+				background-color: #aaff00;
+			}
+			.box3 {
+				position: absolute;
+				top: 100px;
+				width: 150px;
+				height: 150px;
+				background-color: #ff0000;
+			}
+			.box4 {
+				width: 50px;
+				height: 50px;
+				background-color: #5555ff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="boxf"></div>
+		</div>
+		<hr>
+		<div class="father">
+			<div class="box1">
+				<div class="box1f"></div>
+			</div>
+		</div>
+		<hr>
+		<div class="box2">
+			<div class="box3">大毛</div>
+			<div class="box4">二毛</div>
+		</div>
+	</body>
+</html>
